@@ -1,15 +1,20 @@
 ---
-title: "Setting up Git"
+title: Setting up Git
 teaching: 5
 exercises: 0
-questions:
-- "How do I set up Git?"
-objectives:
-- "Configure basic settings in Git"
-keypoints:
-- "Use `git config` with the `--global` option to configure a user name, email address, editor, and other preferences once per machine."
-- "Use `--local` in place of `--global` within a repository to set repository specific changes."
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Configure basic settings in Git
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How do I set up Git?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Before we start using Git for the first time on a new computer, there are some things we need to set up. In this lesson, we will:
 
@@ -53,24 +58,24 @@ To switch to one of the following editors in the tables below, you can use the a
 
 The nano text editor is packaged with Git Bash and Notepad is included in the Windows operating system.
 
-| Editor                                | Configuration command | 
-| :-----------                          | :------------------------------ |
-| nano                                  | `$ git config --global core.editor "nano -w"`                      | 
-| Notepad (Win)                         | `$ git config --global core.editor "c:/Windows/System32/notepad.exe"`                      | 
+| Editor                             | Configuration command | 
+| :--------------------------------- | :-------------------- |
+| nano                               | `$ git config --global core.editor "nano -w"`                      | 
+| Notepad (Win)                      | `$ git config --global core.editor "c:/Windows/System32/notepad.exe"`                      | 
 
 The text editors below are not available by default, but you may be available to you. Setup for these is more complex because it requires providing a filepath to the program executable which may not be the same for everyone.
 
-| Editor                                | Configuration command | 
-| :-----------                          | :------------------------------ |
-| Notepad++ (Win, 64-bit install)       | `$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`                      | 
-| Sublime Text (Win, 64-bit install)    | `$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"`                      |
-| VS Code                               | `$ git config --global core.editor "code --wait"`                      | 
+| Editor                             | Configuration command | 
+| :--------------------------------- | :-------------------- |
+| Notepad++ (Win, 64-bit install)    | `$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`                      | 
+| Sublime Text (Win, 64-bit install) | `$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"`                      | 
+| VS Code                            | `$ git config --global core.editor "code --wait"`                      | 
 
 If you ever want to switch back to Vim as the default, you can run the following command.
 
-| Editor                                | Configuration command | 
-| :-----------                          | :------------------------------ |
-| Vim                                   | `$ git config --global core.editor "vim"`                      | 
+| Editor                             | Configuration command | 
+| :--------------------------------- | :-------------------- |
+| Vim                                | `$ git config --global core.editor "vim"`                      | 
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -128,4 +133,13 @@ $ git config user.email
 
 There are other, optional configuration settings you may wish to change. Review Git documentation and consult with others on your team about other settings.
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Use `git config` with the `--global` option to configure a user name, email address, editor, and other preferences once per machine.
+- Use `--local` in place of `--global` within a repository to set repository specific changes.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+

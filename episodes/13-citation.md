@@ -1,14 +1,29 @@
 ---
-title: "Citation"
+title: Citation
 teaching: 5
 exercises: 0
-questions:
-- "How can I make my work easier to cite?"
-objectives:
-- "How to cite and be cited"
-keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- How to cite and be cited
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How can I make my work easier to cite?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Welcome to using Git in Official Statistics!
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- First key point. Brief Answer to questions. (FIXME)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+

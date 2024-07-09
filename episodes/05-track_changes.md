@@ -1,23 +1,29 @@
 ---
-title: "Tracking Changes"
+title: Tracking Changes
 teaching: 20
 exercises: 0
-questions:
-- "How do I record changes in Git?"
-- "How do I check the status of my version control repository?"
-- "How do I record notes about what changes I made and why?"
-
-objectives:
-- "Check the history of a file"
-- "Use add and commit to record changes"
-- "Create commit messages that are descriptive"
-keypoints:
-
 ---
 
-__Note__ This lesson has been adapted from [Lesson 4 of Version Control with Git](https://swcarpentry.github.io/git-novice/04-changes.html)
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Check the history of a file
+- Use add and commit to record changes
+- Create commit messages that are descriptive
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How do I record changes in Git?
+- How do I check the status of my version control repository?
+- How do I record notes about what changes I made and why?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+**Note** This lesson has been adapted from [Lesson 4 of Version Control with Git](https://swcarpentry.github.io/git-novice/04-changes.html)
 
 ## Getting Started
+
 First let's make sure we're still in the right directory.
 You should be in the `planets` directory.
 
@@ -184,7 +190,6 @@ in the special `.git` directory mentioned earlier
 so that our filesystem doesn't become cluttered
 (and so that we can't accidentally edit or delete an old version).
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Now suppose Dracula adds more information to the file.
@@ -325,15 +330,14 @@ explicitly add things to the staging area, because you might
 commit changes you forgot you made. (Going back to the group photo simile,
 you might get an extra with incomplete makeup walking on
 the stage for the picture because you used `-a`!).
-  
+
 In the context of creating official statistics, using `--all` or `-a` can lead to files being staged and committed that should not be released (like microdata) or can cause difficulties for others on the project (like environment files).
-  
+
 Staging things manually or using a pattern is the best practice,
 otherwise you might find yourself searching for "git undo commit" more
 than you would like!
- 
-Remember to use `git status` after you add files to check what you have staged/added.
 
+Remember to use `git status` after you add files to check what you have staged/added.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -464,7 +468,6 @@ diff is too coarse. That is where the `--color-words` option of
 `git diff` comes in very useful as it highlights the changed
 words using colors.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -482,7 +485,6 @@ screen is a `:`, instead of your usual prompt.
   press <kbd>/</kbd>
   and type `some_word`.
   Navigate through matches pressing <kbd>N</kbd>.
-  
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -546,42 +548,42 @@ Two important facts you should know about directories in Git.
 
 1. Git does not track directories on their own, only files within them.
   Try it for yourself:
-  
-  ```bash
-  $ mkdir spaceships
-  $ git status
-  $ git add spaceships
-  $ git status
-  ```
-  
-  Note, our newly created empty directory `spaceships` does not appear in
-  the list of untracked files even if we explicitly add it (*via* `git add`) to our
-  repository. This is the reason why you will sometimes see `.gitkeep` files
-  in otherwise empty directories. Unlike `.gitignore`, these files are not special
-  and their sole purpose is to populate a directory so that Git adds it to
-  the repository. In fact, you can name such files anything you like.
+
+```bash
+$ mkdir spaceships
+$ git status
+$ git add spaceships
+$ git status
+```
+
+Note, our newly created empty directory `spaceships` does not appear in
+the list of untracked files even if we explicitly add it (*via* `git add`) to our
+repository. This is the reason why you will sometimes see `.gitkeep` files
+in otherwise empty directories. Unlike `.gitignore`, these files are not special
+and their sole purpose is to populate a directory so that Git adds it to
+the repository. In fact, you can name such files anything you like.
 
 2. If you create a directory in your Git repository and populate it with files,
   you can add all files in the directory at once by:
-  
-  ```bash
-  git add <directory-with-files>
-  ```
-  
-  Try it for yourself:
-  
-  ```bash
-  $ touch spaceships/apollo-11 spaceships/sputnik-1
-  $ git status
-  $ git add spaceships
-  $ git status
-  ```
-  
-  Before moving on, we will commit these changes.
-  
-  ```bash
-  $ git commit -m "Add some initial thoughts on spaceships"
-  ```
+
+```bash
+git add <directory-with-files>
+```
+
+Try it for yourself:
+
+```bash
+$ touch spaceships/apollo-11 spaceships/sputnik-1
+$ git status
+$ git add spaceships
+$ git status
+```
+
+Before moving on, we will commit these changes.
+
+```bash
+$ git commit -m "Add some initial thoughts on spaceships"
+```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -610,8 +612,6 @@ last commit made to `mars.txt`?
 Answer 1 is not descriptive enough, and the purpose of the commit is unclear;
 and answer 2 is redundant to using "git diff" to see what changed in this commit;
 but answer 3 is good: short, descriptive, and imperative.
-
-
 
 :::::::::::::::::::::::::
 
@@ -647,8 +647,6 @@ to my local Git repository?
 2. Would try to create a new repository.
 3. Is correct: first add the file to the staging area, then commit.
 4. Would try to commit a file "my recent changes" with the message myfile.txt.
-  
-  
 
 :::::::::::::::::::::::::
 
@@ -775,6 +773,10 @@ between its updated state and its original state, use `git diff`:
 $ git diff me.txt
 ```
 
-{% include links.md %}
+::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 

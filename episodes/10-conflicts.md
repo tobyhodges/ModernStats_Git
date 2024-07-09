@@ -1,14 +1,29 @@
 ---
-title: "Conflicts"
+title: Conflicts
 teaching: 15
 exercises: 0
-questions:
-- "What do I do when my changes conflict with someone else’s?"
-objectives:
-- "Resolve a merge conflict"
-keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Resolve a merge conflict
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- What do I do when my changes conflict with someone else’s?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Welcome to using Git in Official Statistics!
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- First key point. Brief Answer to questions. (FIXME)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+

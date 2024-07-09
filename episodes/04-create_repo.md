@@ -1,14 +1,29 @@
 ---
-title: "Creating a Repository"
+title: Creating a Repository
 teaching: 10
 exercises: 0
-questions:
-- "Where does Git store information?"
-objectives:
-- "Create a repository in a local folder"
-keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
 ---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Create a repository in a local folder
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- Where does Git store information?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Welcome to using Git in Official Statistics!
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- First key point. Brief Answer to questions. (FIXME)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
