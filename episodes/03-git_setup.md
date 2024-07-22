@@ -50,7 +50,6 @@ There are many different Git clients and ways of interacting with Git on your co
 
 As you will learn in [a later lesson](https://unece.github.io/ModernStats_Git/05-track_changes/index.html), once you make updates to your code, you will want to make a snapshot of those updates called a commit and provide an informative message that describes what was changed. This message can be short and be written on the command line (e.g., `git commit -m "Update README.md"`). Sometimes however, you will want to write a longer, multi-line commit message. You can do this by entering `git commit` on the command line. This will bring up the text editor you have configured as your default.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 The default text editor for Git Bash is Vim which has a reputation for being difficult, especially for new users. So you may want to change to something easier to use or something you are more familiar with (e.g., your favorite text editor).
 
